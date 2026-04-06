@@ -6,8 +6,7 @@
     <div style="width: 100%; height: 250px; background: linear-gradient(135deg, #1a1a2e, #16213e); border-radius: 20px; transform-style: preserve-3d; transition: transform 0.3s; box-shadow: 0 20px 40px rgba(0,0,0,0.3);" onmouseover="this.style.transform='rotateX(5deg) rotateY(10deg)';" onmouseout="this.style.transform='rotateX(0deg) rotateY(0deg)';">
       <div style="position: relative; padding: 40px; text-align: center;">
         <div style="font-size: 60px; margin-bottom: 20px;">🏆 🎓 ⭐</div>
-        <h1 style="color: #ffffff; font-family: 'Orbitron', monospace; font-size: 36px; margin: 0; text-shadow: 0 0 20px #00ffff;">Ronbell B. Abarquez</h1>
-        <p style="color: #00ffff; font-family: 'Orbitron', monospace; font-size: 18px; margin-top: 15px;">Scholarship Management System | Quantum Edition</p>
+        <h1 style="color: #ffffff; font-family: 'Orbitron', monospace; font-size: 36px; margin: 0; text-shadow: 0 0 20px #00ffff;">Scholarship Management System</h1>
         <div style="margin-top: 20px;">
           <span style="background: rgba(0,255,255,0.2); padding: 5px 15px; border-radius: 20px; color: #00ffff; margin: 0 5px;">⚡ API Ready</span>
           <span style="background: rgba(255,0,255,0.2); padding: 5px 15px; border-radius: 20px; color: #ff00ff; margin: 0 5px;">🔐 Sanctum Auth</span>
