@@ -19,27 +19,9 @@ class Scholarship extends Model
         'status'
     ];
 
-    protected $casts = [
-        'deadline' => 'date',
-        'amount' => 'decimal:2'
-    ];
-
-    public function requirements()
+    // Add this relationship
+    public function applicants()
     {
-        return $this->hasMany(Requirement::class);
-    }
-
-    public function applications()
-    {
-        return $this->hasMany(Application::class);
-    }
-
-    public function getRemainingSlotsAttribute()
-    {
-        $approvedCount = $this->applications()
-            ->where('status', 'approved')
-            ->count();
-        
-        return $this->slots - $approvedCount;
+        return $this->hasMany(Applicant::class);
     }
 }

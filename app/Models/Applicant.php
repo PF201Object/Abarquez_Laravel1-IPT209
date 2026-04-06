@@ -9,52 +9,23 @@ class Applicant extends Model
 {
     use HasFactory;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array<int, string>
-     */
     protected $fillable = [
         'first_name',
-        'last_name', 
+        'last_name',
         'email',
+        'student_id',
         'phone',
         'address',
         'course',
         'year_level',
+        'scholarship_id',
+        'date_applied',
         'status'
     ];
 
-    /**
-     * The attributes that should be cast.
-     *
-     * @var array<string, string>
-     */
-    protected $casts = [
-        'email_verified_at' => 'datetime',
-    ];
-
-    /**
-     * Get the applications for this applicant.
-     */
-    public function applications()
+    // Relationship to Scholarship
+    public function scholarship()
     {
-        return $this->hasMany(Application::class);
-    }
-
-    /**
-     * Get the documents for this applicant.
-     */
-    public function documents()
-    {
-        return $this->hasMany(Document::class);
-    }
-
-    /**
-     * Get the full name attribute.
-     */
-    public function getFullNameAttribute()
-    {
-        return "{$this->first_name} {$this->last_name}";
+        return $this->belongsTo(Scholarship::class);
     }
 }
